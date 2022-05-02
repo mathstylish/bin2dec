@@ -6,14 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bin2Dec Converter</title>
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <div class="container">
-    <input type="text" id="bin">
-    <input type="text" readonly id="dec">
-    <button id="btn-clear">Limpar</button>
+    <div class="box" id="main-box">
+      <h1>Bin2Dec</h1>
+      <p>Binary-to-Decimal number converter</p>
+      <input type="text" id="bin" placeholder="Enter binary number" autocomplete="off">
+      <input type="text" disabled id="dec" placeholder="Result appears here">
+      <div class="btn-block">
+        <button id="btn-clear">Clear</button>
+      </div>
+    </div>
   </div>
 </body>
 <script src="js/script.js">
